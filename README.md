@@ -39,22 +39,20 @@ Features functionality might be changed based on how much the API supports this 
 ---
 
 ## UI Examples
-<p>
 <p align="center">Today Forecast.</p>
 <p align="center">
-  <img width="1024" height="1536" alt="Today_Forecast" src="https://github.com/user-attachments/assets/2db1a403-1e97-4a73-bf58-8fe74ca2caeb" />
+  <img width="300" height="900" alt="Today_Forecast" src="https://github.com/user-attachments/assets/2db1a403-1e97-4a73-bf58-8fe74ca2caeb" />
 </p>
 
 <p align="center">10 Days Forecast</p>
 <p align="center">
-  <img width="1024" height="1536" alt="Ten_Days_Forecast" src="https://github.com/user-attachments/assets/7b7a4eec-e797-446e-9fa8-4688c954fc6d" />
+  <img width="300" height="900" alt="Ten_Days_Forecast" src="https://github.com/user-attachments/assets/7b7a4eec-e797-446e-9fa8-4688c954fc6d" />
 </p>
 
 
 <p align="center">Settings</p>
 <p align="center">
-  <img width="1024" height="1536" alt="Settings_Screen" src="https://github.com/user-attachments/assets/9f0c8e0d-3c59-4bb1-98aa-d7f2cdcac81b" />
-</p>
+  <img width="300" height="900" alt="Settings_Screen" src="https://github.com/user-attachments/assets/9f0c8e0d-3c59-4bb1-98aa-d7f2cdcac81b" />
 </p>
 
 
