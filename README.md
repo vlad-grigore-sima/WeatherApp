@@ -13,6 +13,8 @@ An experimental weather forecast iOS app built with JetBrains Compose Multiplatf
 
 ## Features
 
+Features functionality might be changed based on how much the API supports this functionality.
+
 - **Tab bar navigation:**
   - **Today:** current weather based on location
   - **10-Day Forecast:** collapsible daily forecast with hourly breakdown
