@@ -7,7 +7,7 @@ An experimental weather forecast iOS app built with JetBrains Compose Multiplatf
 - Transitions and animations in iOS using CMP
 - HTTP requests (OpenWeatherMap API)
 - Saving preferences (units, etc.) via User Defaults
-- Get user current location
+- Working with user location
 
 ---
 
