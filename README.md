@@ -39,6 +39,7 @@ Features functionality might be changed based on how much the API supports this 
 ---
 
 ## UI Examples
+<p>
 <p align="center">Today Forecast.</p>
 <p align="center">
   <img width="1024" height="1536" alt="Today_Forecast" src="https://github.com/user-attachments/assets/2db1a403-1e97-4a73-bf58-8fe74ca2caeb" />
@@ -54,6 +55,6 @@ Features functionality might be changed based on how much the API supports this 
 <p align="center">
   <img width="1024" height="1536" alt="Settings_Screen" src="https://github.com/user-attachments/assets/9f0c8e0d-3c59-4bb1-98aa-d7f2cdcac81b" />
 </p>
-
+</p>
 
 
