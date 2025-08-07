@@ -12,22 +12,25 @@ import org.jetbrains.compose.resources.painterResource
 fun TabBar(
     items: List<TabBarItem>,
     selectedTab: TabBarItem,
-    onItemSelected: (TabBarItem) -> Unit
+    onTabSelected: (TabBarItem) -> Unit
 ) {
     NavigationBar(
         windowInsets = NavigationBarDefaults.windowInsets
     ) {
-        items.map { item ->
+        items.forEachIndexed { index, item ->
             NavigationBarItem(
                 selected = selectedTab == item,
                 icon = {
                     Icon(
                         painter = painterResource(item.icon),
-                        contentDescription = "Today Forecast Tab"
+                        contentDescription = ""
                     )
                 },
                 label = { Text(text = item.text) },
-                onClick = {  }
+                onClick = {
+                    val selectedItem = TabBarItem.fromIndex(index = index)
+                    onTabSelected(selectedItem)
+                }
             )
         }
     }
