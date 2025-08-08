@@ -2,7 +2,7 @@
 
 An experimental weather forecast iOS app built with JetBrains Compose Multiplatform (CMP) to explore:
 
-- Integrating REST APIs ([OpenWeatherMap API](https://openweathermap.org/api))
+- Integrating REST APIs ([OpenWeatherMap API](https://www.weatherapi.com))
 - Designing and implementing tab bars, navigation stacks, and expandable UI in Compose for iOS
 - Transitions and animations in iOS using CMP
 - HTTP requests (OpenWeatherMap API)
