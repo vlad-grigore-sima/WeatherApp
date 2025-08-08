@@ -2,6 +2,7 @@ package org.example.project.todayForecast
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -27,9 +28,13 @@ fun TodayForecast(viewModel: TodayForecastViewModel) {
             .background(Color.Green),
         contentAlignment = Alignment.Center // centers content inside the Box
     ) {
-        Button(onClick = {
-        }) {
-            Text("Click Me")
+        Column {
+            Button(onClick = {
+            }) {
+                Text("Click Me")
+            }
+
+            forecast?.let { Text(text = it.cityName) }
         }
     }
 }
