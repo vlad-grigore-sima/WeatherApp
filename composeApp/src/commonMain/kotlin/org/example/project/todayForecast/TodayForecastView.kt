@@ -6,17 +6,20 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import kotlinx.coroutines.launch
-import org.example.project.networking.makeHttpClient
-import org.example.project.networking.testRequest
 
 @Composable
-fun TodayForecast() {
-    val scope = rememberCoroutineScope()
+fun TodayForecast(viewModel: TodayForecastViewModel) {
+    val forecast by viewModel.forecast.collectAsState()
+
+    LaunchedEffect(Unit) {
+        viewModel.loadForecast()
+    }
 
     return Box(
         modifier = Modifier
@@ -25,10 +28,6 @@ fun TodayForecast() {
         contentAlignment = Alignment.Center // centers content inside the Box
     ) {
         Button(onClick = {
-            val httpClient = makeHttpClient()
-            scope.launch {
-                testRequest(httpClient = httpClient)
-            }
         }) {
             Text("Click Me")
         }

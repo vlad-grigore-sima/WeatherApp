@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import io.ktor.client.HttpClient
 import org.example.project.todayForecast.TodayForecastFactory
 import org.jetbrains.compose.resources.DrawableResource
 import weatherapp.composeapp.generated.resources.Res
@@ -16,9 +17,9 @@ enum class TabBarItem(val index: Int, val text: String, val icon: DrawableResour
     TEN_DAYS(1, "10 days", Res.drawable.tab_10days);
 
     @Composable
-    fun makeScreen() {
+    fun makeScreen(httpClient: HttpClient) {
         when (this) {
-            TODAY -> TodayForecastFactory.makeView()
+            TODAY -> TodayForecastFactory.makeView(httpClient = httpClient)
             TEN_DAYS -> Box(modifier = Modifier.fillMaxSize().background(Color.Blue))
         }
     }

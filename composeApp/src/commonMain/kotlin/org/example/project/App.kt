@@ -6,6 +6,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import org.example.project.networking.makeHttpClient
 import org.example.project.tabBar.TabBar
 import org.example.project.tabBar.TabBarItem
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -27,7 +28,7 @@ fun App() {
             )
         },
         content = {
-            selectedTabBarItem.makeScreen()
+            selectedTabBarItem.makeScreen(httpClient = makeHttpClient())
         }
     )
 }
