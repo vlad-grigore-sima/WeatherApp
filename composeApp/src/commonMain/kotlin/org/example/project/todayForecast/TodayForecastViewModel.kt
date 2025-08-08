@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
 class TodayForecastViewModel(private val dependencies: Dependencies) {
-    data class Dependencies(val fetchForecast: suspend () -> String)
+    data class Dependencies(val fetchForecast: suspend () -> Forecast)
 
     private val _forecast = MutableStateFlow<String?>(null)
     val forecast: StateFlow<String?> = _forecast
