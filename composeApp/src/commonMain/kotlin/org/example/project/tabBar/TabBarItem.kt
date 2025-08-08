@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import org.example.project.todayForecast.TodayForecastFactory
 import org.jetbrains.compose.resources.DrawableResource
 import weatherapp.composeapp.generated.resources.Res
 import weatherapp.composeapp.generated.resources.tab_10days
@@ -17,7 +18,7 @@ enum class TabBarItem(val index: Int, val text: String, val icon: DrawableResour
     @Composable
     fun makeScreen() {
         when (this) {
-            TODAY -> Box(modifier = Modifier.fillMaxSize().background(Color.Red))
+            TODAY -> TodayForecastFactory.makeView()
             TEN_DAYS -> Box(modifier = Modifier.fillMaxSize().background(Color.Blue))
         }
     }
